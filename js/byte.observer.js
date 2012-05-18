@@ -1998,7 +1998,7 @@
         this.attachModalObservers = function() {
 
             $(window).one(this.params.events.modal.keyboard,$.proxy(this.modalObserver,this));
-            $(this.params.dom.container).one(this.params.events.modal.background,$.proxy(this.modalObserver,this));
+            $(this.params.dom.container).bind(this.params.events.modal.background,$.proxy(this.modalObserver,this));
             $(window).one(this.params.events.system.viewSwitchBefore,$.proxy(this.closeView,this,false));
             this.params.dom.header.find('a').first().one('click',$.proxy(this.closeView,this,true));
         }
