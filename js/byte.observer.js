@@ -1975,12 +1975,13 @@
 
         this.closeView = function(hashbang,e) {
 
-            if ( this.params.entity && ( !this.params.entity.isFiltered || !this.params.entity.isFiltered() ) ) {
+            if ( this.params.entity ) {
 
-                this.params.entity.highlight(false);
+                if ( !this.params.entity.isFiltered || !this.params.entity.isFiltered() ) {
+                    this.params.entity.highlight(false);
+                }
 
                 if ( this.params.entity.getParent ) {
-
                     this.params.entity.getParent().highlight(false);
                 }
             }

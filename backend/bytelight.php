@@ -28,7 +28,7 @@ EOF;
          "label": "CMMs",
          "entities" : [
             {
-               "fullname" : "cmm3.c101",
+               "fullname" : "cmm1.c1",
                "view" : "cmm"
             }
          ]
@@ -68,9 +68,9 @@ EOF;
                }
             },
             {
-               "fullname" : "dbr204.c101",
+               "fullname" : "db2.c1",
                "view" : "cmm",
-               "parents" : ["h01", "cmm3.c101"],
+               "parents" : ["h01", "cmm1.c1"],
                "match" : {
                    "type" : "Whatever",
                    "abstract" : "Really, {{whatever}}?!"
